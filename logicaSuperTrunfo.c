@@ -8,73 +8,22 @@
 // primeira carta
 
 int main() {
-    char estado[15];
-    char carta[10];
-    char cidade[20];
-    int habitantes;
-    double area;
-    double PIB;
-    unsigned pontos_turisticos;
+    char estado[15]= "Pará";
+    char carta[10]= "PA01";
+    char cidade[20]= "Belém";
+    int habitantes= 1398531;
+    double area= 1059.458;
+    double PIB= 30835763.45;
+    unsigned pontos_turisticos=10;
 
     // segunda carta
-    char estado2[15];
-    char carta2[10];
-    char cidade2[20];
-    int habitantes2;
-    double area2;
-    double PIB2;
-    unsigned pontos_turisticos2;
-
-
-
-    // Primeira Carta
-        printf("Carta 1\n");
-        
-        printf("Digite o estado:");
-        scanf(" %[^\n]", estado);
-
-        printf("Digite o código da carta:");
-        scanf("%s", carta);
-
-        printf("Digite o nome da cidade:");
-        scanf(" %[^\n]", cidade);
-
-        printf("Digite o número de habitantes:");
-        scanf("%d", &habitantes);
-
-        printf("Digite a área em km²:");
-        scanf("%lf", &area);
-
-        printf("Digite o PIB:");
-        scanf("%lf", &PIB);
-
-        printf("Digite a quantidade de pontos turísticos:");
-        scanf("%d", &pontos_turisticos);
-
-
-    // Segunda Carta
-        printf("Carta 2\n");
-        
-        printf("Digite o estado:");
-        scanf(" %[^\n]", estado2);
-
-        printf("Digite o código da carta:");
-        scanf("%s", carta2);
-
-        printf("Digite o nome da cidade:");
-        scanf(" %[^\n]", cidade2);
-
-        printf("Digite o número de habitantes:");
-        scanf("%d", &habitantes2);
-
-        printf("Digite a área em km²:");
-        scanf("%lf", &area2);
-
-        printf("Digite o PIB:");
-        scanf("%lf", &PIB2);
-
-        printf("Digite a quantidade de pontos turísticos:");
-        scanf("%d", &pontos_turisticos2);
+    char estado2[15]="Pará";
+    char carta2[10]="PA02";
+    char cidade2[20]="Paragominas";
+    int habitantes2=105538;
+    double area2=19342.254;
+    double PIB2=3777292.01;
+    unsigned pontos_turisticos2=10;
 
 // Calculo Desidade e PIB/CAP
     float densidade_populacional = habitantes / area;
@@ -92,7 +41,6 @@ int main() {
     else{
         printf("A carta 2 (%s) venceu", cidade2);
     }
-    
     
 
 return 0;
